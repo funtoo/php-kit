@@ -55,3 +55,4 @@ dev-php/pecl-redis:igbinary - Enables igbinary serialisation support
 dev-php/pecl-zmq:czmq - Use the czmq high level bindings
 dev-php/phing:zip - Support zip archives by requiring said support in dev-lang/php.
 dev-php/twig:extension - Build the C extension (only for php-5.6.x).
+dev-php/xcache:coverage - Enable the coverager module (not recommended for production servers).
