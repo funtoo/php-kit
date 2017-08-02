@@ -1,0 +1,11 @@
+DEFINED_PHASES=install
+DEPEND=>=dev-php/symfony-console-2.7
+DESCRIPTION=Command line interface (CLI) for Joomla
+EAPI=6
+HOMEPAGE=https://www.joomlatools.com/developer/tools/console/
+KEYWORDS=*
+LICENSE=MPL-2.0
+RDEPEND=>=dev-php/symfony-console-2.7
+SLOT=0
+SRC_URI=https://github.com/joomlatools/joomlatools-console/tarball/v1.4.10 -> joomlatools-console-1.4.10.tar.gz
+_md5_=db2ca49fa1663d3b0ed0a0a2985dcf0e
