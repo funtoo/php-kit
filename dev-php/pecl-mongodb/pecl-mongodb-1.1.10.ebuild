@@ -14,16 +14,17 @@ DESCRIPTION="MongoDB database driver for PHP"
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="libressl sasl"
+IUSE="libressl pcre sasl"
 
 RDEPEND="
 	php_targets_php5-6? ( dev-lang/php:5.6[json,ssl,zlib] )
 	php_targets_php7-0? ( dev-lang/php:7.0[json,ssl,zlib] )
 	php_targets_php7-1? ( dev-lang/php:7.1[json,ssl,zlib] )
-	>=dev-libs/libbson-1.6.0
-	>=dev-libs/mongo-c-driver-1.6.0[sasl?,ssl]
+	>=dev-libs/libbson-1.3.3
+	>=dev-libs/mongo-c-driver-1.3.3[sasl?,ssl]
 	!libressl? ( dev-libs/openssl:0= )
 	libressl? ( dev-libs/libressl:0= )
+	pcre? ( dev-libs/libpcre )
 	sasl? ( dev-libs/cyrus-sasl )
 "
 # pkgconfig needed if system libraries are used for bson and libmongoc
@@ -34,6 +35,7 @@ src_configure() {
 		--enable-mongodb
 		--with-libbson
 		--with-libmongoc
+		--with-pcre-dir=$(usex pcre)
 		--with-mongodb-sasl=$(usex sasl)
 	)
 	php-ext-source-r3_src_configure
