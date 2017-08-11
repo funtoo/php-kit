@@ -1,16 +1,16 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-EAPI=6
+EAPI=5
 
 PHP_EXT_NAME="mongo"
-USE_PHP="php5-6"
-DOCS=( README.md )
 
-inherit php-ext-pecl-r3
+USE_PHP="php5-6 php5-5 php5-4"
 
-DESCRIPTION="Legacy MongoDB database driver for PHP"
+inherit php-ext-pecl-r2
+
+DESCRIPTION="MongoDB database driver"
 
 LICENSE="Apache-2.0"
 SLOT="0"
