@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=>=dev-lang/php-5.3[threads] >=app-portage/elt-patches-20170317 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 >=sys-devel/m4-1.4.3 >=sys-devel/libtool-1.5.18 php_targets_php5-3? ( dev-lang/php:5.3 ) php_targets_php5-4? ( dev-lang/php:5.4 ) php_targets_php5-5? ( dev-lang/php:5.5 )
+DESCRIPTION=PHP front-end to POSIX threads library
+EAPI=4
+HOMEPAGE=https://pecl.php.net/package/pthreads
+IUSE=php_targets_php5-3 php_targets_php5-4 php_targets_php5-5
+KEYWORDS=~x86 ~amd64 ~arm ~ppc ~ppc64
+LICENSE=PHP-3.01
+RDEPEND=>=dev-lang/php-5.3[threads] php_targets_php5-3? ( dev-lang/php:5.3 ) php_targets_php5-4? ( dev-lang/php:5.4 ) php_targets_php5-5? ( dev-lang/php:5.5 )
+REQUIRED_USE=|| ( php_targets_php5-3 php_targets_php5-4 php_targets_php5-5 )
+SLOT=0
+SRC_URI=http://pecl.php.net/get/pthreads-2.0.10.tgz
+_eclasses_=autotools	dc412f38566b91012efd58b9c203e6c3	libtool	e32ea84bf82cf8987965b574672dba93	multilib	97f470f374f2e94ccab04a2fb21d811e	php-ext-pecl-r2	143f27ef531c8f37e9defd4eb75bc283	php-ext-source-r2	f89db15e993f2a909a1baea2031e409d	toolchain-funcs	6eb35f81556258a4bc9182ad3dfd58ee
+_md5_=5988c9215cdd84efb4b09b7be5fa532e
