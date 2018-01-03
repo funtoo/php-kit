@@ -1,4 +1,4 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -55,12 +55,12 @@ COMMON_DEPEND="
 					sys-libs/db:4.7
 					sys-libs/db:4.6
 					sys-libs/db:4.5 ) )
-	bzip2? ( app-arch/bzip2 )
+	bzip2? ( app-arch/bzip2:0= )
 	cdb? ( || ( dev-db/cdb dev-db/tinycdb ) )
 	cjk? ( !gd? (
 		virtual/jpeg:0
 		media-libs/libpng:0=
-		sys-libs/zlib
+		sys-libs/zlib:0=
 	) )
 	coverage? ( dev-util/lcov )
 	crypt? ( >=dev-libs/libmcrypt-2.4 )
@@ -69,12 +69,12 @@ COMMON_DEPEND="
 	exif? ( !gd? (
 		virtual/jpeg:0
 		media-libs/libpng:0=
-		sys-libs/zlib
+		sys-libs/zlib:0=
 	) )
 	firebird? ( dev-db/firebird )
-	gd? ( virtual/jpeg:0 media-libs/libpng:0= sys-libs/zlib )
-	gdbm? ( >=sys-libs/gdbm-1.8.0 )
-	gmp? ( dev-libs/gmp:0 )
+	gd? ( virtual/jpeg:0 media-libs/libpng:0= sys-libs/zlib:0= )
+	gdbm? ( >=sys-libs/gdbm-1.8.0:0= )
+	gmp? ( dev-libs/gmp:0= )
 	iconv? ( virtual/libiconv )
 	imap? ( virtual/imap-c-client[kerberos=,ssl=] )
 	intl? ( dev-libs/icu:= )
@@ -98,18 +98,18 @@ COMMON_DEPEND="
 	spell? ( >=app-text/aspell-0.50 )
 	sqlite? ( >=dev-db/sqlite-3.7.6.3 )
 	ssl? (
-		!libressl? ( dev-libs/openssl:0 )
-		libressl? ( dev-libs/libressl )
+		!libressl? ( dev-libs/openssl:0= )
+		libressl? ( dev-libs/libressl:0= )
 	)
 	tidy? ( app-text/htmltidy )
 	truetype? (
 		=media-libs/freetype-2*
 		!gd? (
-			virtual/jpeg:0 media-libs/libpng:0= sys-libs/zlib )
+			virtual/jpeg:0 media-libs/libpng:0= sys-libs/zlib:0= )
 	)
 	unicode? ( dev-libs/oniguruma:= )
 	wddx? ( >=dev-libs/libxml2-2.6.8 )
-	webp? ( media-libs/libwebp )
+	webp? ( media-libs/libwebp:0= )
 	xml? ( >=dev-libs/libxml2-2.6.8 )
 	xmlrpc? ( >=dev-libs/libxml2-2.6.8 virtual/libiconv )
 	xmlreader? ( >=dev-libs/libxml2-2.6.8 )
@@ -117,11 +117,11 @@ COMMON_DEPEND="
 	xpm? (
 		x11-libs/libXpm
 		virtual/jpeg:0
-		media-libs/libpng:0= sys-libs/zlib
+		media-libs/libpng:0= sys-libs/zlib:0=
 	)
 	xslt? ( dev-libs/libxslt >=dev-libs/libxml2-2.6.8 )
-	zip? ( sys-libs/zlib )
-	zlib? ( sys-libs/zlib )
+	zip? ( sys-libs/zlib:0= )
+	zlib? ( sys-libs/zlib:0= )
 "
 
 RDEPEND="${COMMON_DEPEND}
