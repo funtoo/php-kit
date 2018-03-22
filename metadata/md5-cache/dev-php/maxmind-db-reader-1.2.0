@@ -11,4 +11,4 @@ REQUIRED_USE=extension? ( || ( php_targets_php5-6 php_targets_php7-0 php_targets
 SLOT=0
 SRC_URI=https://github.com/maxmind/MaxMind-DB-Reader-php/archive/v1.2.0.tar.gz -> MaxMind-DB-Reader-php-1.2.0.tar.gz
 _eclasses_=autotools	dc412f38566b91012efd58b9c203e6c3	libtool	e32ea84bf82cf8987965b574672dba93	multilib	97f470f374f2e94ccab04a2fb21d811e	php-ext-source-r3	02131d21ec5edc689a1ef97096214131	toolchain-funcs	6eb35f81556258a4bc9182ad3dfd58ee
-_md5_=59d934b05c38edef5bf618ddb07e3ae9
+_md5_=fe7eaa321a613266f23620ef9fc2c365
