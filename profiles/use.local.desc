@@ -29,7 +29,6 @@ dev-lang/php:webp - Enable webp support for GD in php-7.x
 dev-lang/php:xmlreader - Enable XMLReader support
 dev-lang/php:xmlwriter - Enable XMLWriter support
 dev-lang/php:xslt - Enable the XSL extension
-dev-lang/php:zip - Enable ZIP file support
 dev-lang/php:zip-encryption - Enable ZIP file encryption from dev-libs/libzip
 dev-php/PEAR-HTTP_Request2:curl - Force dev-lang/php to be compiled with curl extension
 dev-php/PEAR-HTTP_Request2:fileinfo - Force dev-lang/php to be compiled with fileinfo extension
